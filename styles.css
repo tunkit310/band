@@ -1,0 +1,135 @@
+/* CSS */
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    position: relative;
+}
+
+#menu-button {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropdown-container {
+    position: absolute;
+    display: none;
+    top: 100%; /* Hiển thị dropdown bên dưới nút menu */
+    right: 0;
+}
+
+.menu:hover .dropdown-container {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    margin-bottom: 5px;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column; /* Xếp thành cột dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column; /* Xếp thành cột dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    margin: 10px; /* Khoảng cách giữa các mục tin tức */
+    max-width: 100%; /* Đảm bảo mục tin tức có chiều rộng bằng chiều rộng của trang web */
+}
+
+.news-item img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước cha */
+}
+
+
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Awesome bar styles */
+.awesome-bar {
+    display: flex; /* Hiển thị các item theo chiều ngang */
+    justify-content: space-between; /* Các item cách nhau một cách đều */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.awesome-item {
+    flex-grow: 1; /* Tự động co dãn để cách nhau một cách đều */
+    margin: 0 5px; /* Khoảng cách giữa các item */
+    text-align: center; /* Căn giữa biểu tượng */
+}
+
+
+/* CSS cho layout tablet (≥ 768px và < 992px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Sử dụng flex-start để chúng xếp hàng ngang */
+        align-items: flex-start; /* Căn theo chiều ngang để chúng xếp hàng ngang */
+    }
+
+    .news-item {
+        flex-basis: calc(50% - 10px);
+        margin: 5px;
+    }
+}
+
+
+
+/* Desktop styles (≥ 992px) */
+@media (min-width: 992px) {
+    /* Chỉnh layout thành 3 cột */
+    .menu {
+        flex-direction: row; /* Chuyển menu thành hàng ngang */
+    }
+
+    /* Thêm các quy tắc CSS khác cho layout desktop */
+}

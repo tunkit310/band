@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trink</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<style>
+body {font-family: "Lato", sans-serif}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: gray;
+}
+
+.content{
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 2000px;
+    margin-bottom: 46px;
+}
+
+.section{
+    content:"";
+    display:table;
+    clear:both;
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    padding-top:64px!important;
+    padding-bottom:64px!important;
+    max-width: 800px;
+}
+h2 {
+    letter-spacing:4px
+}
+
+.justify{
+    text-align: justify!important;
+}
+.opacity{
+    opacity: 0.60;
+    text-align: center;
+}
+.thumbnail{
+    padding:0 8px;
+    padding-top:32px!important;
+    padding-bottom:32px!important;
+    display: flex;
+    flex-direction: row;
+}
+.mthumbnail{
+    float:left;
+    width:100%
+}
+.round{
+    border-radius:4px
+}
+.margin-bottom{
+    margin-bottom:16px!important
+}
+
+.black{
+    color:#fff!important;
+    background-color:#000!important
+}
+.date{
+    background-color:#ccc;
+    list-style-type:none;padding:0;margin:0;
+    border:1px solid #ccc!important;
+    color:#000!important;background-color:#fff!important;
+    color:#757575!important
+}
+.month{
+    padding:8px 16px!important;
+    text-align: left;
+}
+.redblock{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+    color:#fff!important;
+    background-color:#f44336!important;
+    margin-left:16px!important
+}
+.noblock{
+    background-color:#000;
+    color:#fff;
+    display:inline-block;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center;
+    border-radius:50%;
+    margin-right:16px!important
+}
+
+.whitethumbnail{
+    padding:0.01em 16px;
+    color:#000!important;
+    background-color:#fff!important;
+}
+.button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    width:100%;
+    padding:8px 16px;
+    white-space: normal;
+}
+.bottom{
+    margin-bottom:16px
+}
+.input{
+    padding:8px;
+    display:block;
+    border-bottom:1px solid #ccc;width:100%;
+    border:1px solid #ccc!important
+}
+</style>
+<body>
+    <ul class="topnav">
+        <li style="float: left;"><a class="active" href="#home">HOME</a></li>
+        <li style="float: left;"><a href="#band">BAND</a></li>
+        <li style="float: left;"><a href="#tour">TOUR</a></li>
+        <li style="float: left;"><a href="#contact">CONTACT</a></li>
+        <li style="float: left;"><a href="#more">MORE<i class="fa fa-caret-down"></i></a></li>
+    </ul>
+    <div class="content">
+        <div class="banner">
+            <img src="la.jpg" width="100%">
+        </div>
+        <div class="section">
+            <h2>THE BAND</h2>
+            <p class="opacity"><i>We love music</i></P>
+            <p class="justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="thumbnail">
+                <div class="mthumbnail">
+                  <p>Name</p>
+                  <img src="bandmember.jpg" class="round margin-bottom" alt="" style="width:60%">
+                </div>
+                <div class="mthumbnail">
+                  <p>Name</p>
+                  <img src="bandmember.jpg" class="round margin-bottom" alt="" style="width:60%">
+                </div>
+                <div class="mthumbnail">
+                  <p>Name</p>
+                  <img src="bandmember.jpg" class="round" alt="" style="width:60%">
+                </div>
+              </div>   
+        </div>
+        <div class="black">
+            <div class="section">
+                <h2>TOUR DATE</h2>
+                <p class="opacity"><i>Remember to book your tickets!</i></p>
+                <div class="date">
+                    <li class="month">September <span class="redblock">Sold out</span></li>
+                    <li class="month">October <span class="redblock">Sold out</span></li>
+                    <li class="month">November <span class="noblock">3</span></li>
+                </div>
+                <div class="thumbnail" style="margin: 0 -16;">
+                    <div class="mthumbnail" style="margin-bottom:16px;padding:0 8px">
+                        <img src="newyork.jpg" alt="New York" style="width:100%;opacity:0.60">
+                        <div class="whitethumbnail">
+                          <p><b>New York</b></p>
+                          <p class="opacity">Fri 27 Nov 2016</p>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button class="button black bottom">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="mthumbnail" style="margin-bottom:16px;padding:0 8px">
+                        <img src="paris.jpg" alt="Paris" style="width:100%;opacity:0.60">
+                        <div class="whitethumbnail">
+                          <p><b>Paris</b></p>
+                          <p class="opacity">Sat 28 Nov 2016</p>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button class="button black bottom">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="mthumbnail" style="margin-bottom:16px;padding:0 8px">
+                        <img src="sanfran.jpg" alt="San Francisco" style="width:100%;opacity:0.60">
+                        <div class="whitethumbnail">
+                          <p><b>San Francisco</b></p>
+                          <p class="opacity">Sun 29 Nov 2016</p>
+                          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                          <button class="button black bottom">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" style="max-width: 800px">
+            <h2>CONTACT</h2>
+            <p class="opacity"><i>Fan? Drop a note!</i></p>
+            <div style="padding-top:32px;padding-bottom:32px;text-align: left;">
+                <div style="float:left;width:49.99999%;font-size:18px;margin-bottom:16px">
+                  <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+                  <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+                  <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                </div>
+                <div style="float:left;width:49.99999%">
+                    <div style="margin:0 -16px 8px -16px;padding:0 6px">
+                      <div style="float:left;width:47%;padding: 0 8px;margin-left: px;">
+                        <input class="input"type="text" placeholder="Name" required="" name="Name">
+                      </div>
+                      <div style="float:left;width:47%;padding: 0 0 8px">
+                        <input class="input" type="text" placeholder="Email" required="" name="Email">
+                      </div>
+                    </div>
+                    <input class="input" type="text" placeholder="Message" required="" name="Message">
+                    <button class="button black" style="margin-top:16px;margin-bottom:16px;float: right;" type="submit">SEND</button>
+                </div>
+            </div>
+        </div>
+        <img src="map.jpg" style="width:100%;max-width:100%;height:auto;filter:grayscale(50%)">
+        <footer class="section opacity" style="color:#000!important;background-color:#f1f1f1;font-size:24px;">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+          </footer>
+    </div>
+</body>
+</html>
